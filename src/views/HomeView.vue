@@ -1,5 +1,4 @@
 <template>
- 
   <header>
     <span> Home </span> 
     <span> | </span> 
@@ -11,5 +10,4 @@
   <main>Bem-Vindo</main>
 
   <footer>Rodapé</footer>
-  
 </template>
