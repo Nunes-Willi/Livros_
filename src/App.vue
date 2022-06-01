@@ -1,4 +1,18 @@
 <template>
+  <header class="menu-superior">
+
+    <div class="menu-esquerdo">
+      <span> Home </span> 
+      <span> | </span> 
+      <span> Jogadores </span> 
+      <span> | </span>
+      <span> Times </span>
+    </div>
+
+    <div class="menu-direito">
+      <span > Exit </span>
+    </div>
+  </header>
 
   <RouterView />
 
@@ -25,6 +39,12 @@ header,footer{
   align-items: center;
   padding-left: 2rem;
 }
+
+ header.menu-superior{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
 header span{
   padding: 0 20px;
