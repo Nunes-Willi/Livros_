@@ -8,7 +8,7 @@
     <span> Times </span>
   </header>
 
-  <main>Bem-Vindo</main>
+  <main>Jogadores</main>
 
   <footer>Rodapé</footer>
   

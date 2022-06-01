@@ -1,9 +1,7 @@
 <template>
- 
-  <header>Home | Jogadores | Times</header>
-  <main>Main</main>
-  <footer>Rodapé</footer>
-  
+
+  <RouterView />
+
 </template>
 
 <style>
@@ -26,6 +24,10 @@ header,footer{
   display: flex;
   align-items: center;
   padding-left: 2rem;
+}
+
+header span{
+  padding: 0 20px;
 }
 
 main{
