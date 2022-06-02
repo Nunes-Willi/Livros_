@@ -1,21 +1,11 @@
+<script setup>
+  import HeaderComp from '@/components/template/HeaderComp.vue';
+  import FooterComp from '@/components/template/FooterComp.vue';
+</script>
 <template>
-  <header class="menu-superior">
-
-    <div class="menu-esquerdo">
-      <span> Home </span> 
-      <span> | </span> 
-      <span> Jogadores </span> 
-      <span> | </span>
-      <span> Times </span>
-    </div>
-
-    <div class="menu-direito">
-      <span > Exit </span>
-    </div>
-  </header>
-
+  <HeaderComp/>
   <RouterView />
-
+  <FooterComp/>
 </template>
 
 <style>
@@ -38,16 +28,6 @@ header,footer{
   display: flex;
   align-items: center;
   padding-left: 2rem;
-}
-
- header.menu-superior{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-header span{
-  padding: 0 20px;
 }
 
 main{
