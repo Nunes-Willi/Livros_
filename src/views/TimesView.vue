@@ -83,7 +83,7 @@ table{
 }
 
 table thead{
-  background-color: rgba(37, 3, 129, 0.801);
+  background-color: rgba(2, 104, 45, 0.911);
   color: white;
 }
 
@@ -92,7 +92,7 @@ table thead th{
 }
 
 table tbody tr:nth-child(odd) {
-  background-color: rgba(7, 115, 187, 0.808);
+  background-color: rgba(22, 161, 3, 0.658);
 
 }
 
