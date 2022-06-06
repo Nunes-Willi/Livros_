@@ -15,6 +15,11 @@
 </template>
 
 <style>
+a{
+  text-decoration: none;
+  color: white;
+}
+
 header.menu-superior{
     display: flex;
     align-items: center;

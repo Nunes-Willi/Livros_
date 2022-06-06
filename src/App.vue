@@ -4,7 +4,9 @@
 </script>
 <template>
   <HeaderComp/>
-  <RouterView />
+  <main>
+    <RouterView />
+  </main>
   <FooterComp/>
 </template>
 
@@ -21,8 +23,8 @@
 }
 
 header,footer{
-  background-color: crimson;
-  color: white;
+  background-color: rgb(51, 158, 1);
+  color: black;
   height: 15%;
   font-size: 1.3rem;
   display: flex;
