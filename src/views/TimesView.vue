@@ -1,3 +1,18 @@
+<script>
+export default {
+  data() {
+    return { 
+      times:[
+        {id: 1, name: "Time1"},
+        {id: 2, name: "Time2"},
+        {id: 3, name: "Time3"},
+        {id: 4, name: "Time4"},
+      ],
+    };
+  },
+};
+</script>
+
 <template>
   <div class="container">
     <div class="title">
@@ -17,19 +32,9 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>PSG</td>
-            <td>???</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Barcelona</td>
-            <td>???</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Real-Madri</td>
+          <tr v-for="time in times" :key="time.id">
+            <td>{{time.id}}</td>
+            <td>{{time.name}}</td>
             <td>???</td>
           </tr>
         </tbody>
@@ -39,61 +44,5 @@
 </template>
 
 <style>
-.title{
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.forme-input{
-display: flex;
-justify-content: center;
-}
-
-.forme-input input{
-  width: 50%;
-  border: 2px solid black;
-  border-radius: 5px;
-  padding: 0 0.5rem;
-  height: 40px;
-}
-
-.forme-input button{
-  height: 40px;
-  margin-left: 1%;
-  background-color: rgb(66, 202, 12);
-  font-weight: bold;
-  color:white;
-  border: 2px solid green;
-  border-radius: 10px;
-  width: 15%;
-}
-
-.list-times{
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0;
-}
-
-table{
-  width: 40%;
-  border: 2px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-table thead{
-  background-color: rgba(2, 104, 45, 0.911);
-  color: white;
-}
-
-table thead th{
-  font-weight: bolder;
-}
-
-table tbody tr:nth-child(odd) {
-  background-color: rgba(22, 161, 3, 0.658);
-
-}
 
 </style>
