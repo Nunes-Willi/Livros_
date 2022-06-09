@@ -3,10 +3,10 @@ export default {
   data() {
     return { 
       jogadores:[
-        {id: 1, name: "Jogador1"},
-        {id: 2, name: "Jogador2"},
-        {id: 3, name: "Jogador3"},
-        {id: 4, name: "Jogador4"},
+        {id: 1, name: "Lionel Messi", afiliacao: "PSG", acao: "6 | 10 | 1"},
+        {id: 2, name: "Cristiano Ronaldo", afiliacao: "Manchester United", acao: "3 | 8 | 0"},
+        {id: 3, name: "Tony Kroos", afiliacao: "Real-Madri", acao: "2 | 12 | 4"},
+        {id: 4, name: "Liverpool", afiliacao: "Mane", acao: "3 | 6 | 3"},
       ],
     };
   },
@@ -30,15 +30,15 @@ export default {
             <th>ID</th>
             <th>Nome</th>
             <th>Time id</th>
-            <th>Ações</th>
+            <th>G | A | F</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="jogador in jogadores" :key="jogador.id">
             <td>{{jogador.id}}</td>
             <td>{{jogador.name}}</td>
-            <td>times</td>
-            <td>???</td>
+            <td>{{jogador.afiliacao}}</td>
+            <td>{{jogador.acao}}</td>
           </tr>
         </tbody>
       </table>

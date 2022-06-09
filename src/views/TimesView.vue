@@ -3,10 +3,10 @@ export default {
   data() {
     return { 
       times:[
-        {id: 1, name: "Time1"},
-        {id: 2, name: "Time2"},
-        {id: 3, name: "Time3"},
-        {id: 4, name: "Time4"},
+        {id: 3, name: "Real-Madri", acao: "25 | 6 | 3"},
+        {id: 1, name: "PSG", acao: "24 | 7 | 4"},
+        {id: 4, name: "Manchester United", acao: "24 | 8 | 3"},
+        {id: 2, name: "Liverpool", acao: "22 | 7 | 5"},
       ],
     };
   },
@@ -28,14 +28,14 @@ export default {
           <tr>
             <th>ID</th>
             <th>Nome</th>
-            <th>Ações</th>
+            <th>V | D | E</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="time in times" :key="time.id">
             <td>{{time.id}}</td>
             <td>{{time.name}}</td>
-            <td>???</td>
+            <td>{{time.acao}}</td>
           </tr>
         </tbody>
       </table>
