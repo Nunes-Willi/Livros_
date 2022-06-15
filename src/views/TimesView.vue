@@ -20,6 +20,13 @@ export default {
         name: this.novo_time,
       });
     },
+    excluir(time) {
+      const indice = this.times.indexOf(time);
+      this.times.splice(indice, 1);
+    },
+    alerta() {
+      alert("ok");
+    },
   },
 };
 </script>
@@ -47,6 +54,10 @@ export default {
             <td>{{time.id}}</td>
             <td>{{time.name}}</td>
             <td>{{time.acao}}</td>
+            <td>
+              <button @click="alerta">Editar</button>
+              <button @click="excluir">excluir</button>
+            </td>
           </tr>
         </tbody>
       </table>

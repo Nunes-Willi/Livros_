@@ -18,7 +18,15 @@ export default {
       this.jogadores.push({
         id: id,
         name: this.novo_jogador,
+        time: this.novo_jogador,
       });
+    },
+    excluir(jogador) {
+      const indice = this.jogadores.indexOf(jogador);
+      this.jogadores.splice(indice, 1);
+    },
+    alerta() {
+      alert("ok");
     },
   },
 };
@@ -50,6 +58,10 @@ export default {
             <td>{{jogador.name}}</td>
             <td>{{jogador.afiliacao}}</td>
             <td>{{jogador.acao}}</td>
+            <td>
+              <button @click="alerta">Editar</button>
+              <button @click="excluir">excluir</button>
+            </td>
           </tr>
         </tbody>
       </table>
