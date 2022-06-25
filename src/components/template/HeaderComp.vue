@@ -9,7 +9,7 @@
     </div>
 
     <div class="menu-direito">
-    <span > Exit </span>
+    <span> Exit </span>
     </div>
 </header>
 </template>
