@@ -1,18 +1,18 @@
 <script setup>
-  import HeaderComp from '@/components/template/HeaderComp.vue';
-  import FooterComp from '@/components/template/FooterComp.vue';
+import HeaderComp from "@/components/template/HeaderComp.vue";
+import FooterComp from "@/components/template/FooterComp.vue";
 </script>
 <template>
-  <HeaderComp/>
+  <HeaderComp />
   <main>
     <RouterView />
   </main>
-  <FooterComp/>
+  <FooterComp />
 </template>
 
 <style>
-@import '@/assets/base.css';
-@import '@/assets/style.css';
+@import "@/assets/base.css";
+@import "@/assets/style.css";
 
 #app {
   max-width: 1280px;
@@ -23,7 +23,8 @@
   font-weight: normal;
 }
 
-header,footer{
+header,
+footer {
   background-color: rgb(51, 158, 1);
   color: black;
   height: 15%;
@@ -33,7 +34,7 @@ header,footer{
   padding-left: 2rem;
 }
 
-main{
+main {
   height: 70%;
 }
 
@@ -45,6 +46,4 @@ main{
   ouverflow: hidden:
   overflow: scroll;
 }*/
-
-
 </style>

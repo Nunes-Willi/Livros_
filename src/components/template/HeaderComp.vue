@@ -1,32 +1,41 @@
 <template>
-<header class="menu-superior">
-    <div class="menu-esquerdo">
-        <span> <RouterLink to="/">Home</RouterLink> </span> 
-        <span> | </span> 
-        <span> <RouterLink to="/times">Times</RouterLink></span>
-        <span> | </span>
-        <span> <RouterLink to="/jogadores">Jogadores </RouterLink></span> 
+  <header class="menu-superior">
+    <div class="dropdown">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton1"
+        data-bs-toggle="dropdown"
+      >
+        Menu
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><RouterLink to="/">Home</RouterLink></li>
+        <li><RouterLink to="/jogadores">Sobre</RouterLink></li>
+      </ul>
+      <div class="cl">
+        <li><RouterLink to="/jogadores">Sobre</RouterLink></li>
+      </div>
     </div>
-
-    <div class="menu-direito">
-    <span> Exit </span>
-    </div>
-</header>
+  </header>
 </template>
 
 <style>
-a{
+header .menu-superior {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+a {
   text-decoration: none;
   color: white;
 }
+.cl {
+  display: flex;
+  align-items: center;
+}
 
-header.menu-superior{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-header span{
+header span {
   padding: 0 20px;
 }
 </style>
