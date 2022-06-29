@@ -54,7 +54,7 @@
     <!-- /container -->
   </main>
 </template>
-<style>
+<style scooped>
 .titulop h2 {
   padding-top: 20px;
   display: flex;

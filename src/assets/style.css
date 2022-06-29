@@ -6,36 +6,35 @@
   --cor5: #F78834;
 }
 
-#app {
-  max-width: 1920px;
-  margin: auto;
-  height: 100vh;
-  font-weight: normal;
-}
-
-header .menu-superior{
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-}
-
 .pesquisar{
   padding-left: 20px;
   background-color: var(--cor2);
 }
+
 .pesquisar input{
   padding: 0 250px;
 }
 
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  height: 100vh;
+  background-color: white;
+  font-weight: normal;
+}
+
 header,
 footer {
+  background-color: var(--cor2);
+  color: black;
   height: 15%;
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
-  border: 1px black solid;
-  background-color: var(--cor2);
-  
+  padding-left: 2rem;
 }
+
 main {
   height: 70%;
   background-color: var(--cor1);
@@ -43,15 +42,6 @@ main {
 .dropdown {
   display: flex;
   padding-left: 20px;
-}
-#bola {
-    border-radius: 50%;
-    display: inline-block;
-    height: 70px;
-    width: 70px;
-    border: 1px solid #000000;
-    background-color: gray;
-    margin-left: 350px;
 }
 
 .blocos-superior{

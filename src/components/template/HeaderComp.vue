@@ -29,7 +29,7 @@
   </header>
 </template>
 
-<style>
+<style scooped>
 header .menu-superior {
   justify-content: space-between;
   display: flex;
