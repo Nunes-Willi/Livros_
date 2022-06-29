@@ -25,7 +25,7 @@ import FooterComp from "@/components/template/FooterComp.vue";
 
 header,
 footer {
-  background-color: rgb(51, 158, 1);
+  background-color: var(--cor2);
   color: black;
   height: 15%;
   font-size: 1.3rem;
