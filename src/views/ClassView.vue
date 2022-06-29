@@ -59,7 +59,7 @@ export default {
 <template>
   <div class="container">
     <div class="title">
-      <h2>Histórico jogadores</h2>
+      <h2>Classificação de livros</h2>
     </div>
     <div class="forme-input">
       <input type="text" placeholder="Nome" v-model="novo_livro" />
