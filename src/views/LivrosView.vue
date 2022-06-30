@@ -61,10 +61,10 @@ export default {
     <div class="title">
       <h2>Classificação de livros</h2>
     </div>
-    <div class="forme-input">
+    <div class="form-input">
       <input type="text" placeholder="Nome" v-model="novo_livro" />
-      <input type="text" placeholder="Time" v-model="novo_autor" />
-      <input type="text" placeholder="Time" v-model="novo_editora" />
+      <input type="text" placeholder="Nome" v-model="novo_autor" />
+      <input type="text" placeholder="Nome" v-model="novo_editora" />
       <button @click="salvar">Salvar</button>
     </div>
     <div class="list-jogadores">

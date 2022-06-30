@@ -6,17 +6,10 @@
   --cor5: #F78834;
 }
 
-.pesquisar{
-  padding-left: 20px;
-  background-color: var(--cor2);
-}
 
-.pesquisar input{
-  padding: 0 250px;
-}
 
 #app {
-  max-width: 1280px;
+  max-width: 1920px;
   margin: 0 auto;
   /* padding: 2rem; */
   height: 100vh;
@@ -41,8 +34,10 @@ main {
 }
 .dropdown {
   display: flex;
-  padding-left: 20px;
+  
 }
+
+
 
 .blocos-superior{
   padding: 2px;
@@ -118,6 +113,7 @@ main {
   .form-input {
     display: flex;
     justify-content: center;
+   align-items: center;
   }
   .form-input input {
     width: 50%;
@@ -131,7 +127,7 @@ main {
     height: 40px;
     margin-left: 1%;
     font-weight: bold;
-    border: 3px solid var(--cor4);
+    border: 3px solid;
     border-radius: 10px;
     width: 15%;
   }

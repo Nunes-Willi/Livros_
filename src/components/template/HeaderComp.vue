@@ -1,5 +1,8 @@
 <template>
   <header class="menu-superior">
+    <div class="cl">
+      <span><RouterLink to="/">Home</RouterLink></span>
+    </div>
     <div class="dropdown">
       <button
         class="btn btn-secondary dropdown-toggle"
@@ -10,16 +13,10 @@
         Menu
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><RouterLink to="/">Home</RouterLink></li>
-        <li><RouterLink to="/Classificação">Sobre</RouterLink></li>
+        <li><RouterLink to="/Livros">Livros</RouterLink></li>
+        <li><RouterLink to="/Cate">Categorias</RouterLink></li>
+        <li><RouterLink to="/Au">Autores</RouterLink></li>
       </ul>
-    </div>
-    <div class="cl">
-      <span
-        ><RouterLink to="/Classificação"
-          >Classificação de livros</RouterLink
-        ></span
-      >
     </div>
     <div class="Perfil">
       <RouterLink to="/Perfil"
@@ -43,7 +40,6 @@ a {
   display: flex;
   align-items: center;
   float: left;
-  padding-right: 820px;
 }
 
 header span {
@@ -54,8 +50,6 @@ header span {
   width: 70px;
 }
 .Perfil {
-  display: flex;
-  padding-right: 20px;
+  margin-left: 1400px;
 }
-.dropdown-menu{}
 </style>

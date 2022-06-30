@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import TimesView from "../views/TimesView.vue";
-import ClassView from "../views/ClassView.vue";
+import CategoriaView from "../views/CategoriaView.vue";
+import LivrosView from "../views/LivrosView.vue";
 import PerfilView from "../views/PerfilView.vue";
+import AutoresView from "../views/AutoresView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,20 +15,25 @@ const router = createRouter({
     },
 
     {
-      path: "/times",
-      name: "times",
-      component: TimesView,
+      path: "/Cate",
+      name: "Categoria",
+      component: CategoriaView,
     },
 
     {
-      path: "/Classificação",
-      name: "Classificação",
-      component: ClassView,
+      path: "/Livros",
+      name: "Livros",
+      component: LivrosView,
     },
     {
       path: "/Perfil",
       name: "Perfil",
       component: PerfilView,
+    },
+    {
+      path: "/Au",
+      name: "Autores",
+      component: AutoresView,
     },
   ],
 });
