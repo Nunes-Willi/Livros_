@@ -14,6 +14,7 @@
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li><RouterLink to="/Livros">Livros</RouterLink></li>
+        <li><RouterLink to="/Ed">Editoras</RouterLink></li>
         <li><RouterLink to="/Cate">Categorias</RouterLink></li>
         <li><RouterLink to="/Au">Autores</RouterLink></li>
       </ul>
@@ -46,10 +47,10 @@ header span {
   padding: 0 20px;
 }
 .Perfil img {
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
 }
 .Perfil {
-  margin-left: 1400px;
+  margin-left: 1000px;
 }
 </style>

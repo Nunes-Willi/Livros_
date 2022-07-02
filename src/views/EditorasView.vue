@@ -3,28 +3,28 @@ import { v4 as uuid } from "uuid";
 export default {
   data() {
     return {
-      novo_categoria: "",
-      novo_sinopse: "",
+      novo_site: "",
+      novo_editora: "",
       jogadores: [
         {
           id: "442e6fe2-e800-11ec-8fea-0242ac120002",
-          categoria: "Romance",
-          sinopse:"...",
+          acao: "Editora Rocco",
+          site:"https://www.rocco.com.br/",
         },
         {
           id: "5116842e-e800-11ec-8fea-0242ac120002",
-          categoria: "Ação",
-           sinopse:"...",
+          acao: "Editora Record LTDA.",
+           site:"https://www.record.com.br/categoria-produto/livros/",
         },
         {
           id: "5b745d2e-e800-11ec-8fea-0242ac120002",
-          categoria: "Terror",
-          sinopse :"...",
+          acao: "Lafonte",
+           site:"https://www.editoralafonte.com.br/",
         },
         {
           id: "6043b8ae-e800-11ec-8fea-0242ac120002",
-          categoria: "Misterio",
-          sinopse:"...",
+          acao: "Editora Record LTDA.",
+          site:"https://www.record.com.br/categoria-produto/livros/",
         },
       ],
     };
@@ -34,8 +34,8 @@ export default {
       const id = uuid();
       this.jogadores.push({
         id: id,
-        categoria: this.novo_categoria,
-        sinopse: this.novo_sinopse
+        acao: this.novo_editora,
+        site: this.novo_site
       });
     },
 
@@ -53,11 +53,11 @@ export default {
 <template>
   <div class="container">
     <div class="title">
-      <h2>Categoria</h2>
+      <h2>Editoras</h2>
     </div>
     <div class="form-input">
-      <input type="text" placeholder="Nome" v-model="novo_categoria" />
-       <input type="text" placeholder="Nome" v-model="novo_sinopse" />
+      <input type="text" placeholder="Nome" v-model="novo_editora" />
+       <input type="text" placeholder="Nome" v-model="novo_site" />
       <button @click="salvar">Salvar</button>
     </div>
     <div class="list-jogadores">
@@ -65,16 +65,16 @@ export default {
         <thead>
           <tr>
             <th>ID</th>
-            <th>Categoria</th>
-             <th>Sinopse</th>
+            <th>Editora</th>
+             <th>Site</th>
             <th>Ação</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="livro in jogadores" :key="livro.id">
             <td>{{ livro.id }}</td>
-            <td>{{ livro.categoria }}</td>
-            <td>{{ livro.sinopse}}</td>
+            <td>{{ livro.acao }}</td>
+            <td>{{ livro.site}}</td>
             <td>
               <button @click="alerta">Editar</button>
               <button @click="excluir">excluir</button>

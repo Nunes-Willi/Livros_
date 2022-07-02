@@ -1,7 +1,7 @@
 <script></script>
 
 <template>
-<div>s</div>
+<div>Bem vindo</div>
 </template>
 <style scoped>
 
