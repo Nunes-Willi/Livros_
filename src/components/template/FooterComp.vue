@@ -2,4 +2,6 @@
   <footer></footer>
 </template>
 
-<style scooped></style>
+<style scooped>
+
+</style>

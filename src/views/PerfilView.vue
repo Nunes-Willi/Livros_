@@ -70,7 +70,7 @@ html {
 
 .card-container.card {
   width: 350px;
-  padding: 40px 40px;
+  padding: 30px 30px;
 }
 
 .btn {

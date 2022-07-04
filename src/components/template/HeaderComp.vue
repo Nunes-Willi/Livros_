@@ -57,12 +57,23 @@ header span {
   width: 50px;
 }
 .Perfil {
-  margin-left: 460px;
+  margin-left: 620px;
 }
 
 .pesquisar{
   padding-right: 90px;
   margin-left: 100px;
-  
+  font-weight: 10px;
+  border: 3px solid;
+  border-radius: 10px;
+}
+
+.pesquisa{
+  font-weight: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid;
+  border-radius: 10px;
+  margin-left: 10px;
+  height: 40px;
 }
 </style>

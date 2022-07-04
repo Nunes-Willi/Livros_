@@ -4,17 +4,12 @@
 
 <div>
     <select class="form-select" id="form" aria-label="Default select example">
-        <option selected>livors recomendados pra você</option>
-        <option value="1">one</option>
-        <option value="2">Two</option>
-        <option value="4">Three</option>
-        <option value="5">Three</option>
+        <option selected>Livros recomendados pra você</option>
+        <option value="2">Livros mais vendidos</option>
+        <option value="4">Livros autobiograficos</option>
+        <option value="5">Livros impirados em filmes/jogos</option>
+        <option value="1">Lojas confiavies</option>
         <option value="6">Three</option>
-        <option value="7">Three</option>
-        <option value="8">Three</option>
-        <option value="9">Three</option>
-        <option value="10">Three</option>
-        <option value="11">Three</option>
     </select>
 </div>
 </template>
@@ -22,7 +17,7 @@
 
 select{
     width: 500px;
-    margin-left: 30%;
+    margin-left: 35%;
 }
 
 </style>
