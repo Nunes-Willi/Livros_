@@ -66,7 +66,7 @@ export default {
           <tr>
             <th>ID</th>
             <th>Editora</th>
-             <th>Site</th>
+            <th>Site</th>
             <th>Ação</th>
           </tr>
         </thead>
